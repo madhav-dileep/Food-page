@@ -1,0 +1,336 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.toptag{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    padding:10px 0px;
+}
+
+.toptag>a{
+    font-size: 12px;
+    margin-right: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.toptag>span{
+    font-size: 20;
+    position: absolute;
+    right: 610px;
+}
+
+.toptag:hover #arrow{
+    animation: slideright 500ms ease-in-out;
+    cursor: pointer;
+    right:8px
+}
+
+@keyframes slideright {
+    
+    0%{
+        right: 550px;
+    }
+    100%{
+        right:10px;
+    }
+}
+
+/* Nav */
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lavender;
+}
+
+#logo{
+    width: 200px;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.list-item{
+    display: inline;
+    margin: 0px 17px;
+}
+
+.list-item:hover{
+    text-decoration: underline;
+}
+
+#consult{
+    border: solid 1px;
+    font-size: 14px;
+    margin-right: 30px;
+    padding: 15px 40px;
+    border-radius: 20px;
+    background-color: lavender;
+}
+#consult:hover{
+    background-color: beige;
+    box-shadow: 1px 1px 1px;
+}
+
+/* LAnd */
+#land{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#land>img{
+    width: 50%;
+}
+
+.textcon{
+    position: absolute;
+    border: solid;
+    border-color: brown;
+    right:35%;
+    bottom:25%;
+    text-align: center;
+    padding: 30px 70px;
+    /* background-color: beige; */
+    background-image: linear-gradient(lavender,beige);
+    box-shadow: 1px 1px 0px;
+    line-height: 50px;
+    animation: float 2s ease infinite;
+}
+
+@keyframes float {
+    0%{transform: translateX(-10px);}
+    50%{transform: translateX(10px);}
+    100%{transform: translateX(-10px);}
+
+}
+
+
+#headtext2{
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+}
+
+#headtext1{
+    /* font-family: "Caveat", cursive; */
+    font-weight: 700;
+    font-size: 50px;
+}
+
+/* Cards */
+.cardimg{
+    width: 100%;
+    height: 160px;
+    border-bottom: solid brown;
+}
+
+.cards{
+    background-color: beige;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.main-card{
+    width: 300px;
+    height: 450px;
+    /* border: solid; */
+    margin: 20px 35px;
+    text-align: center;
+}
+ 
+.sub-card{
+    width: 200px;
+    /* border: solid 1px; */
+    padding: 10px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 20px;
+    background-color: white;
+    /* box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.5); */
+}
+
+.sub-card:hover{
+    animation: shake 1s ease-in-out;
+    box-shadow: 8px 8px 8px rgba(128, 128, 128, 0.5);
+}
+
+@keyframes shake {
+    0%{
+        transform: translateX(0px) translateY(0px);
+    }
+    100%{
+        transform: translateX(-8px) translateY(-8px);
+    }
+}
+
+.cardtitle{
+    font-family: "Oswald", sans-serif;
+}
+.cardsub{
+    font-family: "Dancing Script", cursive;
+}
+
+.cardname,.cardprice{
+    font-weight: 300;
+}
+/* review */
+
+#review{
+    width: 100%;
+    /* margin-top: %; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+}
+
+.r-img{
+    height: 450px;
+    overflow:hidden;
+}
+#imgreview{
+    width: 100%;
+}
+
+.r-content{
+    padding-top: 20px;
+    text-align: center;
+    background-color: lavender;
+}
+.r-head{
+    font-size: 4rem;
+    margin:0;
+    font-family: "Oswald", sans-serif;
+}
+.r-sub{
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: "Qwitcher Grypen", cursive;
+}
+
+input{
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    margin: 20px 10px;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 1px;
+}
+
+.r-content>button{
+    margin-top: 20px;
+    padding: 10px 70px;
+    border-radius: 25px;
+    width: 50%;
+    font-family: "Orbitron", sans-serif;
+    border: none;
+    letter-spacing: 1px;
+}
+
+.r-content>button:hover{
+    
+    box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.585);
+    cursor: pointer;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    padding: 80px 10px;
+}
+
+.foot-name{
+    text-align: justify;
+    padding: 10px 20px;
+    padding-top: 30px;
+}
+
+.foot-name>h3{
+    font-size: 50px;
+    margin: 0;
+}
+
+.foot-name>p{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.foot-section>h4{
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.foot-list{
+    list-style: none;
+    text-align: start;
+    margin: 0;
+    padding: 0;
+}
+
+.foot-list>li{
+    padding: 10px 5px;    
+}
+
+
+#footicon{
+    width:60px;
+    margin: 0;
+}
+#footicon:hover{
+    cursor: pointer;
+    animation: spin 2s ease-out;
+}
+@keyframes spin {
+    0%{transform:rotateY(60deg)}
+    100%{transform: rotateY(360deg);}
+}
+
+.foot-app>h4{
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    margin: 5px 0px;
+    font-weight: 300;
+}
+#appstore{
+    width: 75px;
+    height: 25px;
+}
+#gstore{
+    width: 80px;
+    height: 30px;
+}
+.foot-app{
+    text-align: center;
+    padding-top: 25px;
+
+}
+.foot-app>button{
+    width: 80px;
+    height: 30px;
+    margin: 0;
+    background-color: white;
+    border: none;
+}
